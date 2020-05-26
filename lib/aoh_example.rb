@@ -29,7 +29,7 @@ def aoh_lookup(aoh, row, key)
  r= 1
  aoh.each do |h|
    if(r==row)
-     return aoh[key]
+     return h[key]
    end
   r+=1
 end
