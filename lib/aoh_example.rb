@@ -26,7 +26,7 @@ def literal_aoh
 end
 
 def aoh_lookup(aoh, row, key)
- r= 1
+ r= 0
  aoh.each do |h|
    if(r==row)
      return h[key]
