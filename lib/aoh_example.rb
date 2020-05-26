@@ -9,11 +9,19 @@ BRUCE_G = { name:  "Bruce Green", occupation: "Fan of Mildred" }
 def assembled_aoh
   # Build an array that contains (or, "nests") the constants into a single
   # Array. Ruby constants are denoted by ALL_CAPS
+  arr = []
+  arr << DON_G
+  arr << JOELLE_VD
+  arr << PAT_M
+  arr << KATE_G
+  arr << BRUCE_G
+  arr
 end
 
 def literal_aoh
   # Using Array literal syntax only, build a nested array that uses the data in
   # held in the constants
+  arr = [ { name:  "Don Gately", occupation: "Live-in Staff" }, ]
 end
 
 def aoh_lookup(aoh, row, key)
