@@ -36,6 +36,12 @@ end
 end
 
 def aoh_update(aoh, row, key, new_value)
-  # Update the AoH data at row and key to have the value of new_value
-  # Return the updated AoH
+  r= 0
+ aoh.each do |h|
+   if(r==row)
+      h[key] = new_value
+   end
+  r+=1
+end
+aoh
 end
